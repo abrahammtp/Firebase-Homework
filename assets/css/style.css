@@ -1,0 +1,29 @@
+body {
+    background-image: url("http://i.imgur.com/147DZ.png");
+    background-size: 100%;
+    font-family: 'Lilita One', cursive;
+}
+
+.jumbotron {
+    background-color: rgba(126, 7, 37, 0.85);
+}
+
+.card-header {
+    background-color: rgba(126, 7, 37, 1);
+    font-weight: bold;
+    color: white;
+}
+
+.card-body {
+    background-color: rgba(126, 39, 46, 0.3);
+}
+
+th {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.text-center {
+    font-size: 50px;
+    color: white;
+}

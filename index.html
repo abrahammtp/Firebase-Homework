@@ -15,6 +15,8 @@
     <!-- Firebase Reference -->
     <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase-database.js"></script>
+    <!-- Google Fonts link -->
+    <link href="https://fonts.googleapis.com/css?family=Lilita+One" rel="stylesheet">
     <!-- My own style.css file -->
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
 </head>
@@ -25,8 +27,8 @@
     <div class="container">
 
         <!-- Jumbotron -->
-        <div class="jumbotron" style="background-color: black; color: white">
-            <h1 class="text-center">Train Tracker</h1>
+        <div class="jumbotron">
+            <h1 class="text-center">ATP International Railway</h1>
             <h3 class="text-center">Our trains will never cause you pain</h3>
         </div>
 
@@ -46,7 +48,6 @@
                                     <th scope="col">Frequency</th>
                                     <th scope="col">Next Arrival</th>
                                     <th scope="col">Minutes Away</th>
-                                    <!-- <th scope="col">Total Billed ($)</th> -->
                                 </tr>
                             </thead>
                             <tbody>
@@ -85,7 +86,7 @@
                                 <label for="train-time-input">First Train Time (HH:mm - military time)</label>
                                 <input class="form-control" id="first-train-time-input" placeholder="15:30" type="text">
                             </div>
-                            <button class="btn btn-primary float-left" id="add-train-btn">Submit</button>
+                            <button class="btn btn-success float-left" id="add-train-btn">Submit</button>
                         </form>
 
                     </div>
