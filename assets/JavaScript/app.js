@@ -54,22 +54,18 @@ database.ref().on("child_added", function (snapshot) {
 
     // Actual time
     var actualTime = moment();
-    console.log("CURRENT TIME: " + moment(actualTime).format("HH:mm"));
 
     // Difference between the times
     var timeDifference = moment().diff(moment(firstTrainTimeConverted), "minutes");
-    console.log("DIFFERENCE IN TIME: " + timeDifference);
 
     // Time apart 
     var timeRemaining = timeDifference % sv.frequency;
-    console.log(timeRemaining);
 
     // Minutes away (train)
     var minutesAway = sv.frequency - timeRemaining;
-    console.log("MINUTES TILL TRAIN: " + minutesAway);
 
     // When the next arrival is going to be
-    var nextArrival =  moment().add(minutesAway, "minutes").format("HH:mm");
+    var nextArrival =  moment().add(minutesAway, "minutes").format("HH:mm a");
 
     // Here we append these variables to the html page
     var newRow = $("<tr>").append(
