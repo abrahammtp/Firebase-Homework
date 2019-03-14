@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Train Tracker</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
     <!-- reset.css file -->
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css">
     <!-- First Bootstrap link -->
@@ -42,8 +43,8 @@
                                 <tr>
                                     <th scope="col">Train Name</th>
                                     <th scope="col">Destination</th>
-                                    <th scope="col">Next Arrival</th>
                                     <th scope="col">Frequency</th>
+                                    <th scope="col">Next Arrival</th>
                                     <th scope="col">Minutes Away</th>
                                     <!-- <th scope="col">Total Billed ($)</th> -->
                                 </tr>
@@ -76,13 +77,13 @@
                                     type="text">
                             </div>
                             <div class="form-group">
-                                <label for="train-time-input">First Train Time (HH:mm - military time)</label>
-                                <input class="form-control" id="first-train-time-input" placeholder="15:30"
+                                <label for="train-frequency-input">Frequency (min)</label>
+                                <input class="form-control" id="frequency-train-input" placeholder="30"
                                     type="text">
                             </div>
                             <div class="form-group">
-                                <label for="frequency-input">Frequency (min)</label>
-                                <input class="form-control" id="frequency-train-input" placeholder="20" type="text">
+                                <label for="train-time-input">First Train Time (HH:mm - military time)</label>
+                                <input class="form-control" id="first-train-time-input" placeholder="15:30" type="text">
                             </div>
                             <button class="btn btn-primary float-left" id="add-train-btn">Submit</button>
                         </form>
